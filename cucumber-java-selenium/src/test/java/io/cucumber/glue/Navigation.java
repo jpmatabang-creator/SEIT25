@@ -32,7 +32,7 @@ public class Navigation extends Context {
   public void valid_credentials_are_supplied() {
     String userid = (String) getTestStash().get("userid");
     String password = (String) getTestStash().get("password");
-    //I needed to bypass the basic auth page because I'm unable to send keys to the textfield popup of username and password
+    //I needed to bypass the basic auth page because I'm unable to sendkeys to the textfield popup of username and password
     manager.getDriver().get("https://" + userid + ":" + password + "@the-internet.herokuapp.com/basic_auth");
   }
 
