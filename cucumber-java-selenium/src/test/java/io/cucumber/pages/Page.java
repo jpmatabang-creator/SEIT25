@@ -5,6 +5,7 @@ import java.time.Duration;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
 
+
 public class Page {
 
   protected ChromeDriver driver;
@@ -17,7 +18,7 @@ public class Page {
 
   public void waitForPageLoad() {
     try {
-      Thread.sleep(Duration.ofSeconds(5));
+      Thread.sleep(Duration.ofSeconds(15));
     } catch (InterruptedException e) {
       throw new RuntimeException(e);
     }
