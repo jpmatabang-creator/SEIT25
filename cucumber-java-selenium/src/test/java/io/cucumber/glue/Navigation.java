@@ -1,6 +1,8 @@
 package io.cucumber.glue;
 
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.When;
+import io.cucumber.java.en.Then;
 import io.cucumber.core.Context;
 import io.cucumber.core.Manager;
 
@@ -15,4 +17,7 @@ public class Navigation extends Context {
     manager.getDriver().get(url);
     stash("exampleKey1", "exampleValue1");
   }
+
+
+
 }

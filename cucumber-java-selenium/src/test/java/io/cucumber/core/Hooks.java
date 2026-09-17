@@ -43,6 +43,7 @@ public class Hooks extends Context {
 
   @After
   public void after() {
+    //getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     getDriver().quit();
     System.out.println("Quit driver");
   }
